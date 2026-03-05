@@ -35,13 +35,16 @@ export default function VideoBanner() {
 
     return (
         <section className="videoBanner">
-            {!isMobile ? (
+                <video className="video" autoPlay loop muted playsInline>
+                    <source src="/videos/banner_4.mp4" type="video/mp4" />
+                </video>
+            {/* {!isMobile ? (
                 <video className="video" autoPlay loop muted playsInline>
                     <source src="/videos/banner_4.mp4" type="video/mp4" />
                 </video>
             ) : (
                 <img src="/images/home-banner-mobile.jpg" className="fallbackImage" alt="Banner" />
-            )}
+            )} */}
 
             <div className="overlay"></div>
 
